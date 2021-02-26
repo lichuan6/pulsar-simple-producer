@@ -1,7 +1,11 @@
 # build
 
-    go build
+    make
 
 # produce messages
 
-    ./pulsar-producer --topic public/default/test --count 500000
+    ./producer --topic public/default/test --count 500000
+
+# consume messages
+
+    ./consume
