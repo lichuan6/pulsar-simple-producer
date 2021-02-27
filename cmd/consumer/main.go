@@ -81,7 +81,7 @@ func consumerAllHandleInterrupt(topic string) {
 			consumer.Ack(msg)
 
 			if count%100000 == 0 {
-				fmt.Printf("%d Consumed")
+				fmt.Printf("%d Consumed", count)
 			}
 			if count == 500000 {
 				fmt.Println("500000 Consumed")
